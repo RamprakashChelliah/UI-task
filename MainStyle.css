@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    overflow-y: auto;
+}
+
+#top{
+    background-color: #403f3e;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+}
+
+#top-left, #top-right{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#top p:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#top-content{
+    margin: 15px;
+    color: white;
+}
+
+#body{
+    margin-top: 50px;
+}
+
+#body-content{
+    margin: 10px;
+    padding: 5% 3%;
+    background-color: #bfbaba;
+}
+
+#body-content p{
+    line-height: 25px;
+}
+
+#body-bottom{
+    margin: 25px 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#body-bottom p{
+    line-height: 25px;
+}
+
+#css{
+    margin: 0 25px;
+}
+
+#button{
+    margin: 5px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+#footer-right{
+    margin: 0 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+#footer-right p{
+    margin: 0 5px;
+}
+
+@media screen and (max-device-width : 425px) 
+{
+    #top-content{
+        font-size: 25px;
+    }
+    
+    #body-content{
+        margin-top: 15px;
+    }
+    
+    #body-bottom{
+        display: flex;
+        flex-wrap: wrap;
+    }   
+    
+    #css{
+        margin: 0;
+    }
+
+    #button{
+        margin: 15px 0;
+        padding: 10px;
+        font-size: 25px;
+    }
+
+    #footer{
+        font-size: 25px;
+    }
+}
